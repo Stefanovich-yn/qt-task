@@ -8,11 +8,13 @@ CONFIG += c++17
 
 SOURCES += \
     bitprocessor.cpp \
+    filewriter.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     bitprocessor.h \
+    filewriter.h \
     mainwindow.h \
     numstr.h
 

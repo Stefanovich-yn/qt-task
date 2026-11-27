@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>300</width>
-    <height>300</height>
+    <width>350</width>
+    <height>364</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,31 +16,87 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QFormLayout" name="formLayout_2">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelA">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="3" column="1">
+       <widget class="QLabel" name="labelRangeB">
         <property name="font">
          <font>
-          <pointsize>14</pointsize>
+          <pointsize>9</pointsize>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">color: #666666</string>
+        </property>
         <property name="text">
-         <string>A</string>
+         <string>от 0 до 1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineEditC">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLabel" name="labelRangeC">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #666666</string>
+        </property>
+        <property name="text">
+         <string>от -3 до 60</string>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QSpinBox" name="spinBoxA">
-        <property name="maximum">
-         <number>256</number>
+       <widget class="QLineEdit" name="lineEditA">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelA">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>A </string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLabel" name="labelRangeD">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #666666</string>
+        </property>
+        <property name="text">
+         <string>от 10 до 12345678</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
        <widget class="QLabel" name="labelB">
         <property name="font">
          <font>
-          <pointsize>14</pointsize>
+          <pointsize>13</pointsize>
          </font>
         </property>
         <property name="text">
@@ -48,18 +104,20 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
-       <widget class="QSpinBox" name="spinBoxB">
-        <property name="maximum">
-         <number>1</number>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEditB">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item row="4" column="0">
        <widget class="QLabel" name="labelC">
         <property name="font">
          <font>
-          <pointsize>14</pointsize>
+          <pointsize>13</pointsize>
          </font>
         </property>
         <property name="text">
@@ -67,35 +125,39 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QSpinBox" name="spinBoxC">
-        <property name="minimum">
-         <number>-3</number>
-        </property>
-        <property name="maximum">
-         <number>60</number>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
+      <item row="6" column="0">
        <widget class="QLabel" name="labelD">
         <property name="font">
          <font>
-          <pointsize>14</pointsize>
+          <pointsize>13</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>D</string>
+         <string>D </string>
         </property>
        </widget>
       </item>
-      <item row="3" column="1">
-       <widget class="QSpinBox" name="spinBoxD">
-        <property name="minimum">
-         <number>10</number>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="lineEditD">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
         </property>
-        <property name="maximum">
-         <number>12345678</number>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="labelRangeA">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #666666</string>
+        </property>
+        <property name="text">
+         <string>от 0 до 256</string>
         </property>
        </widget>
       </item>
@@ -103,6 +165,11 @@
     </item>
     <item>
      <widget class="QPushButton" name="pushButtonRun">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Выполнить</string>
       </property>
@@ -116,7 +183,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>300</width>
+     <width>350</width>
      <height>26</height>
     </rect>
    </property>

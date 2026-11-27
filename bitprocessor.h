@@ -1,20 +1,19 @@
 /**
  * @file bitprocessor.h
- * @brief Описание класса BitProcessor для побитовой обработки и сохранения данных.
+ * @brief Описание класса BitProcessor для побитовой обработки структуры NumStr.
  */
 
 #ifndef BITPROCESSOR_H
 #define BITPROCESSOR_H
 
 #include <stdint.h>
-#include <string>
 #include <vector>
 
 #include "numstr.h"
 
 /**
  * @class BitProcessor
- * @brief Класс для перевода структуры в массив байтов, инверсии чётных битов и записи в файл.
+ * @brief Класс, отвечающий за преобразование структуры в байты и операции с битами.
  */
 class BitProcessor
 {
@@ -33,12 +32,11 @@ public:
     void invertEvenBits(std::vector<uint8_t> &bytes);
 
     /**
-     * @brief Записывает каждый бит массива в файл (по одному числу 0 или 1 на строку).
-     * @param bytes Массив байтов после обработки.
-     * @param filePath Путь к файлу для сохранения.
-     * @return 1 при успешной записи, 0 при ошибке.
+     * @brief Извлекает последовательность отдельных битов (0 или 1) из массива байтов.
+     * @param bytes Массив байтов.
+     * @return Вектор значений 0 и 1 (по 8 элементов на каждый байт).
      */
-    uint8_t saveBitsToFile(const std::vector<uint8_t> &bytes, const std::string &filePath);
+    std::vector<uint8_t> extractBits(const std::vector<uint8_t> &bytes);
 };
 
 #endif // BITPROCESSOR_H
